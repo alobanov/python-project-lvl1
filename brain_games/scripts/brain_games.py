@@ -1,10 +1,12 @@
 #!/usr/bin/env python
-from colorama import Fore, Back, Style
+import prompt
 
 
 def main():
-    print(Fore.RED + 'Welcome to the Brain Games!')
+    print("Welcome to the Brain Games!")
+    name = prompt.string("May I have your name? ")
+    print("Hello, " + name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
