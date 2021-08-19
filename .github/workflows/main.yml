@@ -1,0 +1,8 @@
+name: Check lint
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step-with-checking-linter
+        run: make lint
